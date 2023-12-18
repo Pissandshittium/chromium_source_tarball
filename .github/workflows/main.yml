@@ -21,10 +21,15 @@ jobs:
           ./export_tarball.py chromium --progress
           ls -lh *.tar.xz
 
+      - name: Create sha256sum
+        run: sha256sum *.tar.xz > .tar.xz.sha256
+
       - name: Upload Binary Files
         uses: actions/upload-artifact@v3
         with:
-          path: '*.tar.xz'
+          path: |
+            *.tar.xz
+            .tar.xz.sha256
           retention-days: 1
 
 
