@@ -6,7 +6,7 @@ import subprocess
 import sys
 
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
-SRC_URL = 'https://chromium.googlesource.com/chromium/src.git'
+SRC_URL = 'https://github.com/Pissandshittium/pissandshittium.git'
 
 def add_depot_tools_to_path():
   depot_tools_path = os.path.join(ROOT_DIR, 'vendor', 'depot_tools')
