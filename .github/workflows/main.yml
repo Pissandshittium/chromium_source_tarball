@@ -14,7 +14,7 @@ jobs:
           submodules: recursive
 
       - name: Checkout Chromium
-        run: ./checkout.py --revision
+        run: ./checkout.py
 
       - name: Create source tarball
         run: |
